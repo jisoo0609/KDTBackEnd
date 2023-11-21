@@ -53,5 +53,12 @@ public class D2Operators {
         // 입장 가능한가
         boolean canEnter = notSick && isOfAge;
         System.out.println(canEnter);
+
+        // 미세먼지 수치
+        int dust = 37;
+        // 80이하면 "좋음", 아니면 "나쁨"
+        String message = dust <= 80 ? "좋음" : "나쁨";
+
+        System.out.println(String.format("미세먼지 수치: %d, (%s)", dust, message));
     }
 }
