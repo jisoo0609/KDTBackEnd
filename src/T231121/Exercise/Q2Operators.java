@@ -1,4 +1,4 @@
-package T231121;
+package T231121.Exercise;
 
 import java.util.Scanner;
 
