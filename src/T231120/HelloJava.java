@@ -1,3 +1,5 @@
+package T231120;
+
 import java.util.Scanner;
 
 public class HelloJava {

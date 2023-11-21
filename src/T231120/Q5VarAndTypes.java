@@ -1,7 +1,9 @@
+package T231120;
+
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Q5 {
+public class Q5VarAndTypes {
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
 		

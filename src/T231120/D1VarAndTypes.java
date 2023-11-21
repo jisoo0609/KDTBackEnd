@@ -1,3 +1,5 @@
+package T231120;
+
 public class D1VarAndTypes {
     public static void main(String[] args) {
         int americano = 1500;
