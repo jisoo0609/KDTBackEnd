@@ -1,4 +1,4 @@
-package T231121.Exercise;
+package T231121.D2Prov;
 
 import java.util.Scanner;
 

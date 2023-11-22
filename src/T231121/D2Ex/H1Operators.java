@@ -1,6 +1,5 @@
-package T231121.Practice;
+package T231121.D2Ex;
 
-import java.io.IOException;
 import java.util.Scanner;
 /*
         어떤 야구단의 승, 무승부, 패가 입력된다.
@@ -15,8 +14,8 @@ public class H1Operators {
         int draw = sc.nextInt();
         int lose = sc.nextInt();
 
-        double percentage = (win /(double)(win+lose));
+        double percentage = (double)win /(win+lose);
 
-        System.out.println(String.format("%d승 %d무 %d패 승률: %.3f", win, draw, lose, percentage));
+        System.out.println(String.format("%d승 %d무 %d패 승률: %.3fn", win, draw, lose, percentage));
     }
 }

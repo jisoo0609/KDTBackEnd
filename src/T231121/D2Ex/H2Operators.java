@@ -1,4 +1,4 @@
-package T231121.Practice;
+package T231121.D2Ex;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,13 +1,14 @@
-package T231121.Practice;
+package T231121.D2Ex;
 
 import java.util.Scanner;
-public class H6Operators {
+public class H4Operators {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double temp = sc.nextDouble();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        boolean result = temp >= 38 || temp <=36;
+        boolean result = a%b == 0;
         System.out.println(result);
     }
 }
