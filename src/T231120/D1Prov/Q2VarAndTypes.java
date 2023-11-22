@@ -1,4 +1,4 @@
-package T231120;
+package T231120.D1Prov;
 
 import java.util.Scanner;
 

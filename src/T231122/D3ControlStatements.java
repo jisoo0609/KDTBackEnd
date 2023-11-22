@@ -133,16 +133,17 @@ public class D3ControlStatements {
         System.out.println(target);
 
         // 백신을 맞지 않은 사람만 세기
-        boolean[] vaccinated = {true, false, false, false, true, true, false, false, false};
+        boolean[] vaccinated = {true, false, false, false, false, false, false, true, true};
         int groupCount = 0;
         for (boolean vaccine : vaccinated) {
             if (vaccine) {
+                System.out.println("백신 맞으면 세지 않아요");
                 continue;
             }
             groupCount++;
             // 일정 인원 이상이면 입장불가
             if (groupCount > 5) {
-                System.out.println("입장이 불가합니다");
+                System.out.println("입장이 불가합니다...");
                 break;
             }
         }

@@ -1,4 +1,4 @@
-package T231120;
+package T231120.D1Prov;
 
 import java.io.IOException;
 import java.util.Scanner;
