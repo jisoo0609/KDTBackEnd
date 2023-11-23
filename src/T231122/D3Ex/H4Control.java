@@ -27,7 +27,7 @@ public class H4Control {
         }
 
         for(int i=0; i<temperature.length; i++) {
-            if (temperature[i] >= 38) {
+            if (temperature[i] > 38) {
                 System.out.println(names[i]);
             }
         }

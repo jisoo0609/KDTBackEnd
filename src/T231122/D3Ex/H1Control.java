@@ -14,10 +14,10 @@ public class H1Control {
 
         if(n>0) {
             System.out.println(String.format("%d는 양수", n));
-        } else if(n==0) {
-            System.out.println("0");
-        } else {
+        } else if(n<0) {
             System.out.println(String.format("%d는 음수", n));
+        } else {
+            System.out.println("0");
         }
     }
 }

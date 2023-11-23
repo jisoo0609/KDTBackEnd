@@ -12,21 +12,24 @@ public class H5Control {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("정수를 입력하세요: ");
-        int n = sc.nextInt();
-        int start = n%10;
-        System.out.println(start);
-
-        int i = 2;
+        // base가 원래 1의 자리
+        int base = sc.nextInt()%10;
+        // 현재 얼마인지를 저장하기 위한 변수
+        int now = base;
+        // 몇번 반복했는지 count
+        int i = 0;
         while (true) {
-            n *= n;
-            System.out.println(String.format("n^%d: %d",i,n));
-            System.out.println(String.format("1의 자리: %d",n%10));
-
-            if (n%10 == start) {
-                System.out.println(String.format("%d번",i));
+            // 거듭제곱
+            now *= base;
+            // 1의 제곱만 남김
+            now %= 10;
+            // 횟수 증가
+            i++;
+            // 종료조건 확인
+            if (now == base) {
                 break;
             }
-            i++;
         }
+        System.out.println(String.format("%d번",i));
     }
 }

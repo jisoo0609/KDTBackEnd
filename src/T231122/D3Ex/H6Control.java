@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /*
-    1월 1일의 요일과
-    2월 29일의 유무가 정수, 불린으로 주어진다.
+    1월 1일의 요일이 정수
+    2월 29일의 유무가 불린으로 주어진다.
 
     이때 1월 1일의 요일은,
     0 - 월요일, 1 - 화요일, 2 - 수요일, 3 - 목요일, 4 - 금요일, 5 - 토요일, 6 - 일요일
@@ -30,8 +30,7 @@ public class H6Control {
         }
 
         System.out.print("윤년의 유무를 입력하세요(윤년인 경우 1): ");
-        int Leep = sc.nextInt();
-        boolean isLeep = Leep == 1; // 윤년인 경우 1
+        boolean isLeep = sc.nextBoolean(); // 윤년인 경우 1
 
         if (isLeep) {
             month[1] = 29;

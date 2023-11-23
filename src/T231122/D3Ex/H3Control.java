@@ -14,15 +14,14 @@ public class H3Control {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // 정수 두개 입력받음
-        System.out.println("정수 두개를 입력하세요");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        // 첫번째 정수 단위
+        int unit = sc.nextInt(); // 단위
+        int length = sc.nextInt(); // 길이
 
-        if(a == 0) {
-           System.out.println(String.format("%.2fcm",(double)b*2.54));
-        } else if (a == 1) {
-            System.out.println(String.format("%d인치", b));
+        if(unit == 0) { // cm -> inch : /2.54
+           System.out.println(String.format("%.2finch", (double)length/2.54));
+        } else { // inch -> cm : *2.54
+            System.out.println(String.format("%.2fcm", (double)length*2.54));
         }
     }
 }
