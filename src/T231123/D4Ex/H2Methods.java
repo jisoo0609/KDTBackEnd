@@ -11,16 +11,18 @@ import java.util.Scanner;
  */
 public class H2Methods {
     public static int time(int n) {
+        // 입력 범위 벗어남
         if (n < 0 || n > 127) {
             return -1;
         }
-        return (n+7)%12;
+        int now = 7;
+        // 몇시간이 지나다
+        now += n;
+        return now % 12 == 0 ? 12 : now % 12;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
-        System.out.println(time(n));
+        System.out.println(time(sc.nextInt()));
     }
 }

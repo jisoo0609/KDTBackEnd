@@ -11,7 +11,8 @@ package T231123.D4Ex;
 public class H4Methods {
     // 배열의 값들 중 최댓값의 위치를 반환
     public static int maxWhere(int[] nums) {
-        int max = 0;
+        // 초기 비교 대상
+        int max = nums[0];
         int idx = 0;
 
         for (int i=0; i<nums.length; i++) {
@@ -39,10 +40,10 @@ public class H4Methods {
 
     // 배열의 값들 중 최댓값과 최솟값의 차이를 반환하는
     public static int maxDiff(int[] nums) {
-        int max = nums[maxWhere(nums)];
-        int min = nums[minWhere(nums)];
+        int maxIdx = maxWhere(nums);
+        int minIdx = minWhere(nums);
 
-        return max - min;
+        return maxIdx - minIdx;
     }
 
     public static void main(String[] args) {

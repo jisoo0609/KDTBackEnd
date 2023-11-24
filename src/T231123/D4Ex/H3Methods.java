@@ -31,6 +31,20 @@ public class H3Methods {
             return -1;
         }
     }
+
+    public static int cacProv(char op, int a, int b) {
+        switch (op) {
+            case '+':
+                return a+b;
+            case '-':
+                return a-b;
+            case '*':
+                return a*b;
+            case '/':
+                return  a/b;
+        }
+        return -1;
+    }
     public static void main(String[] args) {
         System.out.println(calculate());
     }

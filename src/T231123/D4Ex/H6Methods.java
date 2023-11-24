@@ -27,6 +27,14 @@ public class H6Methods {
         }
         return cnt;
     }
+
+    public static int hanoi(int n) {
+        // n < 1 = -1
+        if (n < 1) return 0;
+        // f(1) = 1
+        if (n == 1) return 1;
+        else return hanoi(n-1) * 2 + 1;
+    }
     public static void main(String[] args) {
         System.out.println(move(3, 'A', 'B', 'C'));
     }
