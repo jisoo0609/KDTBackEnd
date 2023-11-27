@@ -1,6 +1,6 @@
 package T231124;
 
-public class D5Main {
+public class Main {
     public static void main(String[] args) {
 //        D5Car myCar = new D5Car(); // Car 클래스의 객체를 만듦. 자료형 Car
 //        D5Car.count += 1;
@@ -22,7 +22,7 @@ public class D5Main {
 //        car.printInfo();
 //        System.out.println(D5Car.count); // 2 출력
 
-        D5Car someCar = new D5Car("K3", "Kia", 60);
+        Car someCar = new Car("K3", "Kia", 60);
 //        someCar.name = "K3";
 //        someCar.brand = "Kia";
 //        someCar.fuel = 60;
@@ -31,7 +31,7 @@ public class D5Main {
         someCar.setBrand(100);
         someCar.printInfo();
 
-        D5Car sonata = new D5Car();
+        Car sonata = new Car();
         sonata.printInfo();
 
         // ???
@@ -40,7 +40,7 @@ public class D5Main {
 //        someCar.printInfo();
 
         System.out.println("==========");
-        D5Person me = new D5Person("JISOO");
+        Person me = new Person("JISOO");
         for (int i=0; i<24; i++) {
             me.age();
         }

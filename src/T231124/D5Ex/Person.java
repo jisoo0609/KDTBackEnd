@@ -18,7 +18,7 @@ public class Person {
     }
 
     public void sayHello() {
-        if (age >= 5) {
+        if (this.age >= 5) {
             System.out.println(String.format("Hello, I'm %s", name));
         } else {
             System.out.println("응애응애");
@@ -26,7 +26,7 @@ public class Person {
     }
 
     public int age() {
-        age += 1;
-        return age;
+        this.age++;
+        return this.age;
     }
 }

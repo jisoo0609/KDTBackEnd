@@ -1,6 +1,6 @@
 package T231124;
 
-public class D5Car {
+public class Car {
     // 총 도로를 달리고 있는 자동차의 갯수
     public static int count = 0;
     private final String brand; // 브랜드
@@ -8,7 +8,7 @@ public class D5Car {
     private int fuel; // 탱크 상태
 
     // 생성자 - 객체를 만들때 호출되는 메서드
-    public D5Car(String name, String brand, int fuel) {
+    public Car(String name, String brand, int fuel) {
         System.out.println("==========");
         count++;
         this.name = name;
@@ -17,7 +17,7 @@ public class D5Car {
     }
 
     // 생성자 Method Overloading
-    public D5Car() {
+    public Car() {
         System.out.println("==========");
         count++;
         this.name = "Sonata";

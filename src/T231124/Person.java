@@ -8,13 +8,13 @@ package T231124;
     name을 인자로 전달하는 생성자
  */
 
-public class D5Person {
+public class Person {
     // 사람은 이름(`name`), 나이(`age`) 정보를 가질 수 있다.
     private final String name;
     private int age;
 
     // 생성자
-    public D5Person(String name) {
+    public Person(String name) {
         this.name = name;
         this.age = 0;
     }
