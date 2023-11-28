@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        // 추상 클래스 Person
         Person alex = new Student("Alex", 20, "CSE");
         Person brad = new Student("Brad", 21, "CSE");
         Person chad = new Lecturer("Chad", 50, "OOP");

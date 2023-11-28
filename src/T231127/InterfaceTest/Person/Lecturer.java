@@ -1,4 +1,7 @@
 package T231127.InterfaceTest.Person;
+
+
+// 강사를 만들고 (이름, 주제) (인사)
 public class Lecturer extends Person {
     private String subject;
 
