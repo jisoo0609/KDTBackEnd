@@ -31,6 +31,15 @@ public class Main {
         System.out.println("Alex".equals(noName.getName()));
         if (noName.getName() != null)
             noName.getName().equals(alex.getName());
+
+        try {
+            System.out.println(noName.getName().equals("Alex"));
+        } catch (NullPointerException e) {
+            System.out.println("name was null");
+            System.out.println(e.getMessage());
+            // e.printStackTrace() 좋지는 않지만 에러 메세지 출력해주는 코드
+        }
+
     }
 
     public static void printPerson(Person person) {
