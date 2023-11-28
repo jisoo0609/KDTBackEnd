@@ -40,7 +40,7 @@ public class Main {
         while (scanner.hasNextLine())
             System.out.println(scanner.nextLine());
     }
-    
+
     // 두개의 정수를 받아 나누어서 정수를 반환하는 정적 메서드 divide
     public static int divide(int a, int b) {
         return a/b;
