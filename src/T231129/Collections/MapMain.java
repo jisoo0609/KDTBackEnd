@@ -52,11 +52,13 @@ public class MapMain {
 
         // 2. putIfAbsent
         // 지정된 키가 아직 값과 연결되지 않은 경우(또는 null에 매핑된 경우)
-        // 해당 키를 지정된 값과 연결하고 null을 반환하고, 그렇지 않으면 현재 값을 반환합니다.
+        // 키가 존재하지 않을때 새로운 값이 추가되면 null을 반환
+        // 키가 이미 존재해서 새로운 값이 추가되지 않았다면, 기존 값이 반환
         Integer before = majorMember.putIfAbsent(newMajor, 1);
         if (before != null) {
             majorMember.put(newMajor, before+1);
         }
+        System.out.println(majorMember);
 
         Map<String, List<String>> majorStudents = new HashMap<>();
         majorStudents.put("CSE", new ArrayList<>());
