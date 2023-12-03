@@ -3,9 +3,9 @@ package Application.Kiosk;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+
+import static java.awt.SystemColor.menu;
 
 public class Main {
     public static boolean isInteger(String s) {
@@ -45,12 +45,14 @@ public class Main {
         List<Integer> cart = new ArrayList<>();
 
         List<String> readLines = new ArrayList<>();
-        List<Menu> menuList = new ArrayList<>();
+        Map<Integer, Menu> menuList = new HashMap<>();
 
         while (true) {
             System.out.println("메뉴를 선택하세요.");
 
             // 파일 불러오기
+            // 메서드로 분리해서 호출 시에만 파일 불러올 수 있도록 변경 필요
+            // 현재 while문 돌아갈 때마다 파일 새로 불러옴 -> 누적됨
             try (FileReader fileReader = new FileReader("menu.csv");
                  BufferedReader reader = new BufferedReader(fileReader)) {
                 String line;
@@ -60,18 +62,18 @@ public class Main {
 
                     String[] seperated = line.split(",");
                     Menu menu = new Menu(
-                            Integer.parseInt(seperated[0]),
                             seperated[1],
                             Integer.parseInt(seperated[2])
                     );
-                    menuList.add(menu);
+                    menuList.put(Integer.parseInt(seperated[0]), menu);
                 }
             } catch (IOException e) {
                 System.out.println("Error Opening File: "+ e.getMessage());
             }
 
-            for (Menu menu : menuList) {
-                System.out.println(String.format("%d. <%s> - <%d>", menu.getNumber(), menu.getName(), menu.getPrice()));
+            // Value값 List 고려 필요
+            for (Map.Entry<Integer, Menu> entry : menuList.entrySet()) {
+                System.out.println();
             }
 
             System.out.println("메뉴 추가: 번호 입력");
@@ -100,7 +102,7 @@ public class Main {
             if (Integer.parseInt(select) > menuList.size()) {
                 System.out.println("메뉴가 없습니다.");
                 System.out.println("돌아가기: back");
-                System.out.println("선택하세요: ");
+                System.out.print("선택하세요: ");
                 select = sc.next();
 
                 if ("back".equals(select)) {
@@ -112,6 +114,8 @@ public class Main {
             cart.add(Integer.parseInt(select));
         }
 
-        // 3.
+        // 3. 장바구니
+
+
     }
 }

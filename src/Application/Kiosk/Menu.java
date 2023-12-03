@@ -19,8 +19,7 @@ public class Menu {
         return price;
     }
 
-    public Menu(int number, String name, int price) {
-        this.number = number;
+    public Menu(String name, int price) {
         this.name = name;
         this.price = price;
     }
