@@ -1,4 +1,4 @@
-package T231205.BOJ;
+package Algorithm.BOJ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,20 +21,34 @@ public class B10815 {
             hasNumbers[i] = Integer.parseInt(st.nextToken());
         }
 
-        // 가지고 있는 숫자카드인지 아닌지 구해야 할 M 값
-        int m = Integer.parseInt(br.readLine());
-        // M개의 정수 배열 입력받음
-        int[] numbers = new int[m];
-        st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = Integer.parseInt(st.nextToken());
-        }
-
         // 정렬
         Arrays.sort(hasNumbers);
 
-        int left = 0;
-        int end = hasNumbers.length - 1;
+        // 가지고 있는 숫자카드인지 아닌지 구해야 할 M 값
+        int m = Integer.parseInt(br.readLine());
+        st = new StringTokenizer(br.readLine());
 
+        for (int i = 0; i < m; i++) {
+            int target = Integer.parseInt(st.nextToken());
+        }
+
+    }
+
+    public static boolean binarySearch(int target, int n, int[] arr) {
+        int left = 0;
+        int right = n -1;
+
+        while (left <= right) {
+            int mid = (right-left)/2;
+
+            if (arr[mid] == target) {
+                return true;
+            } else if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return false;
     }
 }

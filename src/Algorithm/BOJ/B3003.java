@@ -1,4 +1,4 @@
-package T231204.BOJ;
+package Algorithm.BOJ;
 
 import java.io.BufferedReader;
 import java.io.IOException;

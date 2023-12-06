@@ -1,4 +1,4 @@
-package T231204.Programmers;
+package Algorithm.Programmers;
 
 public class S181942 {
     public String Solution1(String str1, String str2) {

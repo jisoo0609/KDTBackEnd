@@ -1,4 +1,4 @@
-package T231204.Programmers;
+package Algorithm.Programmers;
 
 // 181932 코드 처리하기
 

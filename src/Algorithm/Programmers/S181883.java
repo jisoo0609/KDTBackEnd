@@ -1,4 +1,4 @@
-package T231204.Programmers;
+package Algorithm.Programmers;
 
 public class S181883 {
     public int[] solution(int[] arr, int[][] queries) {

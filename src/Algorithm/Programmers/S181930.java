@@ -1,4 +1,4 @@
-package T231205.Programmers;
+package Algorithm.Programmers;
 
 import java.util.Arrays;
 
