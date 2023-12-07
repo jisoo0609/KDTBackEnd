@@ -4,42 +4,41 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.StringTokenizer;
 
 public class B10815 {
-    public static void main(String[] args) throws IOException {
+    public void solution() throws IOException {
+        // 입력 받기
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
-        StringTokenizer st;
+        int N = Integer.parseInt(br.readLine());
 
-        // 숫자 카드의 개수 N의 개수 주어짐
-        int n = Integer.parseInt(br.readLine());
-        // 숫자 카드에 적혀있는 정수가 주어짐
-        int[] hasNumbers = new int[n];
-        st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < hasNumbers.length; i++) {
-            hasNumbers[i] = Integer.parseInt(st.nextToken());
+        String[] hasNumberStr = br.readLine().split(" ");
+        int[] hasNumbers = new int[N];
+        for (int i = 0; i < N; i++) {
+            hasNumbers[i] = Integer.parseInt(hasNumberStr[i]);
         }
 
-        // 정렬
         Arrays.sort(hasNumbers);
 
-        // 가지고 있는 숫자카드인지 아닌지 구해야 할 M 값
-        int m = Integer.parseInt(br.readLine());
-        st = new StringTokenizer(br.readLine());
-
-        for (int i = 0; i < m; i++) {
-            int target = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(br.readLine());
+        String[] inCards = br.readLine().split(" ");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < M; i++) {
+            int result = binarySearch(hasNumbers, Integer.parseInt(inCards[i]))
+                    ? 1 : 0;
+            sb.append(result)
+                    .append(' ');
         }
 
+        System.out.println(sb);
     }
 
-    public static boolean binarySearch(int target, int n, int[] arr) {
+    // 이진 탐색
+    public boolean binarySearch(int[] arr, int target) {
         int left = 0;
-        int right = n -1;
+        int right = arr.length - 1;
 
         while (left <= right) {
-            int mid = (right-left)/2;
+            int mid = left + (right - left) / 2;
 
             if (arr[mid] == target) {
                 return true;
@@ -49,6 +48,11 @@ public class B10815 {
                 right = mid - 1;
             }
         }
+
         return false;
+    }
+
+    public static void main(String[] args) throws IOException {
+        new B10815().solution();
     }
 }
