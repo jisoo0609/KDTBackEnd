@@ -3,7 +3,7 @@ package T231208;
 import java.util.Arrays;
 
 public class Combination {
-    // 5개 중에서 3개를 선택하는 방ㅇ법들을 출력하는 메서드
+    // 5개 중에서 3개를 선택하는 방법들을 출력하는 메서드
     // 5C3을 출력하는 메서드
     public static void combSimple(int n) {
         int first;
