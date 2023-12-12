@@ -9,7 +9,6 @@ public class ListComparison {
     public static void main(String[] args) {
         List<String> arrayList = new ArrayList<>();
         List<String> linkedList = new LinkedList<>();
-
         System.out.println("ArrayList 실행");
         rearInsert(arrayList);
         frontInsert(arrayList);
