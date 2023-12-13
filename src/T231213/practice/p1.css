@@ -1,0 +1,10 @@
+/* 1. 오른쪽 정렬 */
+.name-elem-me {
+    text-align: end;
+}
+
+/* 2. 노란 배경 */
+.message-me {
+    text-align: end;
+    background-color: yellow;
+}
