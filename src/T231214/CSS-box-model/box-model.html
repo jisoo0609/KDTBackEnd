@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01-styles.css">
+</head>
+<body>
+    <h1>Box Model</h1>
+    
+    <!-- object-fit -->
+    <img src="fish.png" alt="물고기" class="display-block margin-all">
+
+
+    <!-- border-box -->
+    <div class="box shorthand border border-box">shorthand</div>
+
+    <p>Inline 요소는 width height가 무의미</p>
+    <div class="box display-inline">a</div>
+    <div class="box display-inline">b</div>
+
+
+    <form>
+        <img src="fish.png" alt="물고기" class="display-block margin-all">
+        <label class="display-block margin-all">
+            이름
+            <input type="text">
+        </label>
+        <label class="display-block margin-all">
+            나이
+            <input type="text">
+        </label>
+    </form>
+
+    <!-- 네버 로그인 버튼 -->
+    <div id="login-container" class="border">
+        <p>네버를 더 안전하고 편리하게 이용하세요</p>
+        <div id="login-big-button" class="margin-auto">NEVER 로그인</div>
+        <p>아이디 찾기 | 비밀번호 찾기 | 회원가입</p>
+    </div>
+
+    <h1>Hello World</h1>
+    <div class="box padding-all">
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+    </div>
+
+    <div class="box shorthand">shorthand</div>
+    <div class="box margin-4">box 0</div>
+    <div class="box padding-4">box 1</div>
+    <div class="box margin-all padding-all">box 2</div>
+</body>
+</html>
