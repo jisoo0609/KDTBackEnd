@@ -1,4 +1,4 @@
-package T231205;
+package December.Algorithm.T231205;
 
 import java.util.Arrays;
 

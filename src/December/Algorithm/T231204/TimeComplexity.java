@@ -1,4 +1,4 @@
-package T231204;
+package December.Algorithm.T231204;
 
 public class TimeComplexity {
     // 자연수 n을 받아서 (입력검증 필요X)

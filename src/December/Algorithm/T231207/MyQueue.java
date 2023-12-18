@@ -1,4 +1,4 @@
-package T231207;
+package December.Algorithm.T231207;
 // 큐의 형태로 데이터를 관리하는 클래스
 public class MyQueue {
     // 데이터를 담기위한 배열

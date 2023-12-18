@@ -1,7 +1,5 @@
 package Algorithm.Programmers;
 
-import T231207.Main;
-
 public class S159994 {
     public String solution(String[] cards1, String[] cards2, String[] goal) {
         int cards1Idx = 0;

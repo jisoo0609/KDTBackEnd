@@ -1,4 +1,4 @@
-package T231204;
+package December.Algorithm.T231204;
 
 public class TwoDimension {
     public static void main(String[] args) {

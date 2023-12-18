@@ -1,4 +1,4 @@
-package T231207;
+package December.Algorithm.T231207;
 
 public class MyCyQueue {
     // 크기를 4로 가정하여 만듦

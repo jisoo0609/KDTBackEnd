@@ -1,4 +1,4 @@
-package T231206;
+package December.Algorithm.T231206;
 // int 데이터를 스택의 형태로 관리할 수 있는 클래스
 public class MyStack {
     // 배열로 실제 데이터 보관
