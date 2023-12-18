@@ -2,6 +2,7 @@
 -- 연습용 테이블
 DROP TABLE IF EXISTS user;
 CREATE TABLE user (
+<<<<<<< HEAD
                       id integer primary key autoincrement ,
                       first_name varchar(255) default NULL ,
                       last_name varchar(255) default NULL ,
@@ -10,6 +11,16 @@ CREATE TABLE user (
                       phone varchar(100) default NULL,
                       email varchar(255) default NULL,
                       country varchar(100) default NULL
+=======
+    id integer primary key autoincrement ,
+    first_name varchar(255) default NULL ,
+    last_name varchar(255) default NULL ,
+    age mediumint default NULL,
+    balance mediumint default NULL,
+    phone varchar(100) default NULL,
+    email varchar(255) default NULL,
+    country varchar(100) default NULL
+>>>>>>> a77edc8cfd3ebdb0cee5240936d9d6821b43739b
 );
 
 -- INSERT
@@ -31,12 +42,21 @@ SELECT first_name, last_name FROM user;
 SELECT age, first_name, last_name FROM user;
 
 -- 특정 컬럼의 데이터를 기준으로 정렬해서 조회하기
+<<<<<<< HEAD
 SELECT first_name, age FROM user ORDER BY age;
 SELECT first_name, age FROM user ORDER BY age DESC;
 
 
 -- UPDATE
 -- 나이가 없는 데이터의 나이를 전부 0으로
+=======
+SELECT first_name FROM user ORDER BY age;
+SELECT first_name FROM user ORDER BY age DESC;
+
+-- UPDATE
+-- 나이가 없는 데이터의 나이를 전부 0으로
+
+>>>>>>> a77edc8cfd3ebdb0cee5240936d9d6821b43739b
 -- 갱신할 테이블
 UPDATE user
 -- 갱신할 컬럼에 넣을 데이터
@@ -49,17 +69,51 @@ UPDATE user
 SET age = 60, balance = 0
 WHERE first_name = 'jeeho';
 
+<<<<<<< HEAD
 -- country가 NULL인 열들의 국적을 Korea로
 UPDATE user
 SET country = 'KOREA'
 WHERE country IS NULL;
 
+=======
+-- country가 NULL인 열들의 국적을 KOREA로
+UPDATE user
+SET country = 'Korea'
+WHERE country IS NULL;
+
+-- UPDATE문에 WHERE가 없으면 테이블 전체가 수정됨
+>>>>>>> a77edc8cfd3ebdb0cee5240936d9d6821b43739b
 UPDATE user
 SET balance = 0;
 
 -- DELETE
+<<<<<<< HEAD
 -- first_name이 jeeho인 열을 지운다.
 DELETE FROM user
 WHERE first_name = 'jeeho';
 
 DELETE FROM user;
+=======
+-- first_name이 jeeho인 열을 지운다
+DELETE FROM user
+WHERE first_name = 'jeeho';
+
+-- INSERT 할때 Constraint 꼭 지킬것
+DROP TABLE IF EXISTS user;
+CREATE TABLE user (
+                      id integer primary key autoincrement ,
+                      first_name varchar(255) NOT NULL ,
+                      last_name varchar(255) NOT NULL ,
+                      age mediumint NOT NULL,
+                      balance mediumint default NULL,
+                      phone varchar(100) default NULL,
+                      email varchar(255) default NULL,
+                      country varchar(100) default NULL
+);
+
+-- INSERT
+INSERT INTO user (first_name, last_name)
+VALUES ('jeeho', 'park');
+
+
+>>>>>>> a77edc8cfd3ebdb0cee5240936d9d6821b43739b
