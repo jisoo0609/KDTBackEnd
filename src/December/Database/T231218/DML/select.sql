@@ -54,3 +54,12 @@ SELECT * FROM user WHERE first_name LIKE 'A%';
 -- _ = 1개의 문자와 동일한 문자
 SELECT * FROM user WHERE first_name LIKE 'A___';
 SELECT * FROM user WHERE age = '23';
+
+-- 전화번호가 '010-'으로 시작되는 테이블을 조회하는 SQL
+SELECT * FROM user WHERE phone LIKE '010%';
+
+-- 전화번호가 '010-'으로 시작되지 않는 데이터를 조회하는 SQL
+SELECT * FROM user WHERE phone NOT LIKE '010%';
+
+-- 성에 `'`이 포함된 이름을 조회하는 SQL
+SELECT last_name FROM user WHERE first_name LIKE '%''%';
