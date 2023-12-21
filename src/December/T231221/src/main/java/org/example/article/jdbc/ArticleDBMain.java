@@ -1,19 +1,15 @@
-package org.example.article;
+package org.example.article.jdbc;
 
-import org.example.ArticleSimple;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 // 안내만 하는 역할
-public class ArticleMain {
+public class ArticleDBMain {
     public static void main(String[] args) {
         System.out.println("게시글 작성하기 1.");
         Scanner scanner = new Scanner(System.in);
 
         // 새 ArticleService를 만든다
-        ArticleService articleService = new ArticleService(scanner);
+        ArticleDBService articleService = new ArticleDBService(scanner);
 
         // 사용자가 종료를 원하는 flag
         boolean quit = false;

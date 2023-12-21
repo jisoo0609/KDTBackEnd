@@ -1,4 +1,4 @@
-package org.example.article;
+package org.example.article.list;
 
 // POJO - Plain Old Java Object
 public class ArticleMem {
