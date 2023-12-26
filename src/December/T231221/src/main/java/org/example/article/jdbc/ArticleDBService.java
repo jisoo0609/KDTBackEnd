@@ -54,8 +54,9 @@ public class ArticleDBService {
         System.out.print("글 번호를 선택하세요: ");
         String idxString = this.scanner.nextLine();
         int idx = Integer.parseInt(idxString);
-
-        List<ArticleDto> article = this.dao.readOne(idx);
-        System.out.println(String.format("5d. %s", article.getId(), article.getTitle()));;
+        ArticleDto article = this.dao.readOne(idx);
+        System.out.println();
+        System.out.println(String.format("제목: %s", article.getTitle()));
+        System.out.println(String.format("내용: %s", article.getContent()));
     }
 }
