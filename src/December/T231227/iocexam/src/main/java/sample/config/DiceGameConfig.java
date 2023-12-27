@@ -1,11 +1,11 @@
-package December.T231227.iocexam.src.main.java.sample.config;
+package sample.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
-import December.T231227.iocexam.src.main.java.sample.Dice;
-import December.T231227.iocexam.src.main.java.sample.Game;
-import December.T231227.iocexam.src.main.java.sample.Player;
+import sample.Dice;
+import sample.Game;
+import sample.Player;
 
 import java.util.List;
 

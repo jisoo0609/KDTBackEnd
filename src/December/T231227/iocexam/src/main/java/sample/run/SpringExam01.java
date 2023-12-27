@@ -1,9 +1,9 @@
-package December.T231227.iocexam.src.main.java.sample.run;
+package sample.run;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import December.T231227.iocexam.src.main.java.sample.MyBean;
-import December.T231227.iocexam.src.main.java.sample.config.MyBeanConfig;
+import sample.MyBean;
+import sample.config.MyBeanConfig;
 
 public class SpringExam01 {
     public static void main(String[] args) {

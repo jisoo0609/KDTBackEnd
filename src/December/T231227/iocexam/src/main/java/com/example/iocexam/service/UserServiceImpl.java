@@ -1,7 +1,7 @@
-package December.T231227.iocexam.src.main.java.com.example.iocexam.service;
+package com.example.iocexam.service;
 
 import com.example.iocexam.domain.User;
-import December.T231227.iocexam.src.main.java.com.example.iocexam.repository.UserDao;
+import com.example.iocexam.repository.UserDao;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 

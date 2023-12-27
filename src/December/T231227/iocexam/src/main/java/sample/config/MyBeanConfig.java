@@ -1,8 +1,8 @@
-package December.T231227.iocexam.src.main.java.sample.config;
+package sample.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Scope;
-import December.T231227.iocexam.src.main.java.sample.MyBean;
+import sample.MyBean;
 
 public class MyBeanConfig {
     @Bean

@@ -1,12 +1,12 @@
-package December.T231227.iocexam.src.main.java.sample.run;
+package sample.run;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import December.T231227.iocexam.src.main.java.sample.Dice;
-import December.T231227.iocexam.src.main.java.sample.Game;
-import December.T231227.iocexam.src.main.java.sample.MyBean;
-import December.T231227.iocexam.src.main.java.sample.config.DiceGameConfig;
-import December.T231227.iocexam.src.main.java.sample.config.MyBeanConfig;
+import sample.Dice;
+import sample.Game;
+import sample.MyBean;
+import sample.config.DiceGameConfig;
+import sample.config.MyBeanConfig;
 
 public class SpringExam02 {
     public static void main(String[] args) {

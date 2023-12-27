@@ -1,4 +1,4 @@
-package December.T231227.iocexam.src.main.java.com.example.iocexam.repository;
+package com.example.iocexam.repository;
 
 import com.example.iocexam.domain.User;
 

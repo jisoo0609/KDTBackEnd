@@ -1,4 +1,4 @@
-package December.T231227.iocexam.src.main.java.com.example.iocexam.domain;
+package com.example.iocexam.domain;
 
 public class User {
     private String name;

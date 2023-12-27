@@ -1,4 +1,4 @@
-package December.T231227.iocexam.src.test.java.com.example.iocexam;
+package com.example.iocexam;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

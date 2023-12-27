@@ -1,4 +1,4 @@
-package December.T231227.iocexam.src.main.java.sample;
+package sample;
 
 import java.util.List;
 

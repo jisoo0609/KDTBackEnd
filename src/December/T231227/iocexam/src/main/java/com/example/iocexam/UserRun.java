@@ -1,4 +1,4 @@
-package December.T231227.iocexam.src.main.java.com.example.iocexam;
+package com.example.iocexam;
 
 import com.example.iocexam.config.UserConfig;
 import com.example.iocexam.controller.UserController;

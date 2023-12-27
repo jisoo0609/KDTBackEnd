@@ -1,5 +1,3 @@
-package December.T231227.iocexam
-
 plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.1'
